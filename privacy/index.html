@@ -1,58 +1,183 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2775.1">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #5b5b60; -webkit-text-stroke: #5b5b60}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618; background-color: #f2f2f5}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618; background-color: #f2f2f5; min-height: 15.0px}
-    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618; min-height: 15.0px}
-    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #2d41d2; -webkit-text-stroke: 0px #2d41d2}
-    span.s3 {-webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: disc}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Cliptyd</title>
+<meta name="description" content="How Cliptyd handles your data. Short version: everything stays on your iPhone.">
+<meta name="theme-color" content="#5b4bdb">
+<style>
+  :root {
+    --bg: #fbfbfe;
+    --text: #14141f;
+    --muted: #5f6070;
+    --card: #ffffff;
+    --border: rgba(20, 20, 40, 0.08);
+    --accent-1: #5b4bdb;
+    --accent-2: #1c8cf5;
+    --soft: #eef0ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a12;
+      --text: #f4f4f8;
+      --muted: #a2a3b5;
+      --card: #14141f;
+      --border: rgba(255, 255, 255, 0.09);
+      --soft: #1a1a2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-1); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) { a { color: #8fa8ff; } }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 22px; }
+
+  .nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(180%) blur(16px);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--text); }
+  .brand:hover { text-decoration: none; }
+  .logo {
+    width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  }
+  .logo svg { width: 18px; height: 18px; }
+  .nav nav { display: flex; gap: 22px; font-size: 0.95rem; }
+  .nav nav a { color: var(--muted); }
+  .nav nav a:hover { color: var(--text); text-decoration: none; }
+
+  header.page {
+    background:
+      radial-gradient(60% 80% at 15% 0%, rgba(91, 75, 219, 0.16), transparent 70%),
+      radial-gradient(50% 70% at 90% 10%, rgba(28, 140, 245, 0.14), transparent 70%);
+    padding: 56px 0 36px;
+  }
+  .doc { max-width: 720px; margin: 0 auto; padding: 0 22px; }
+  h1 { font-size: clamp(2.1rem, 5vw, 3rem); letter-spacing: -0.03em; line-height: 1.1; margin: 0 0 8px; }
+  .date { color: var(--muted); margin: 0; }
+
+  .summary {
+    background: var(--card); border: 1px solid var(--border); border-left: 5px solid var(--accent-1);
+    border-radius: 18px; padding: 20px 24px; margin: 28px 0 8px; font-size: 1.08rem;
+  }
+
+  main { padding-bottom: 72px; }
+  h2 { font-size: 1.35rem; letter-spacing: -0.01em; margin: 40px 0 8px; }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  .tick { list-style: none; padding-left: 0; }
+  .tick li { padding-left: 30px; position: relative; }
+  .tick li::before {
+    content: "\2713"; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 0.8rem; font-weight: 700; color: #fff;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  }
+
+  footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(--muted); font-size: 0.92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+  footer a { color: var(--muted); }
+  footer a:hover { color: var(--text); }
+</style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 4.0px 0.0px; font: 24.0px 'Helvetica Neue'; color: #011f67; -webkit-text-stroke: #161618"><span class="s1"><b>Cliptyd Privacy Policy</b><b></b></span></h1>
-<p class="p2"><span class="s1">Effective date: 1 November 2026</span></p>
-<p class="p3"><span class="s1"><b>In short:</b> Cliptyd keeps your clipboard history on your iPhone and nowhere else. It has no accounts, no ads, no analytics and no tracking, and it does not send any data to us or to anyone else.</span></p>
-<p class="p4"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Who we are</b></span></h2>
-<p class="p6"><span class="s1">Cliptyd is an iPhone app and keyboard made by Chinazom Emeregbam ("we", "us"). If you have any questions about this policy, contact us at <a href="mailto:REPLACE-WITH-YOUR-EMAIL"><span class="s2">cliptyd@gmail.com</span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>What Cliptyd stores</b></span></h2>
-<p class="p6"><span class="s1">Cliptyd saves the text you copy, so you can paste earlier copies and not only the latest one. It keeps up to 20 recent items. This history is stored only on your device, in storage shared between the Cliptyd app and the Cliptyd keyboard.</span></p>
-<p class="p6"><span class="s1">Cliptyd also stores a few simple settings on your device, such as whether to save automatically when the app opens.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>What Cliptyd does not do</b></span></h2>
-<ul class="ul1">
-  <li class="li7"><span class="s3"></span><span class="s1">It does not send your clipboard history, or anything else, off your device.</span></li>
-  <li class="li7"><span class="s3"></span><span class="s1">It does not record, store or send what you type on the keyboard. The only text it saves is text you copy.</span></li>
-  <li class="li7"><span class="s3"></span><span class="s1">It does not use analytics, advertising, tracking or third-party services.</span></li>
-  <li class="li7"><span class="s3"></span><span class="s1">It does not require an account.</span></li>
-</ul>
-<p class="p8"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Why the keyboard asks for Full Access</b></span></h2>
-<p class="p6"><span class="s1">iOS requires "Allow Full Access" for a keyboard to read what you copy and to share its saved history with its app. We use it only for those two things. Cliptyd does not use Full Access to connect to the internet or to transmit any data.</span></p>
-<p class="p6"><span class="s1">The keyboard works for typing without Full Access, but it cannot save or show your clipboard history without it.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Clipboard access in the app</b></span></h2>
-<p class="p6"><span class="s1">When you open Cliptyd, it can save what you most recently copied. iOS may ask whether Cliptyd may paste from other apps, and you can choose Allow or Don't Allow at any time in Settings &gt; Cliptyd &gt; Paste from Other Apps. You can also turn this automatic saving off inside the app.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Sensitive information</b></span></h2>
-<p class="p6"><span class="s1">Cliptyd saves text you copy, which could include sensitive text such as a password if you copy one. Anything saved stays on your device. You can delete any item by swiping on it in the app or pressing and holding it in the keyboard, or delete everything with "Clear all". Uninstalling Cliptyd deletes its saved history from your device.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Backups</b></span></h2>
-<p class="p6"><span class="s1">Your device or iCloud backups, which you control through your Apple settings, may include Cliptyd's stored data. We do not have access to those backups.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Shortcuts</b></span></h2>
-<p class="p6"><span class="s1">If you use the "Save to Clipboard History" action in the Shortcuts app, the text you pass to it is passed to Cliptyd on your device and saved in your history in the same way.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Children</b></span></h2>
-<p class="p6"><span class="s1">Cliptyd is not directed at children and does not collect personal information from anyone.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Changes to this policy</b></span></h2>
-<p class="p6"><span class="s1">If we change this policy, we will update the effective date above. If a change affects how your data is handled, we will tell you in the app.</span></p>
-<h2 style="margin: 0.0px 0.0px 12.4px 0.0px; font: 15.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>Contact</b></span></h2>
-<p class="p6"><span class="s1">Questions or requests: <a href="mailto:REPLACE-WITH-YOUR-EMAIL"><span class="s2">cliptyd@gmail.com</span></a></span></p>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="4" width="14" height="17" rx="3"/><path d="M9 4h6v3H9z"/><path d="M9 12h6M9 16h4"/>
+        </svg>
+      </span>
+      Cliptyd
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="mailto:cliptyd@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<header class="page">
+  <div class="doc">
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: 1 November 2026</p>
+    <div class="summary">
+      <strong>In short:</strong> Cliptyd keeps your clipboard history on your iPhone and nowhere else.
+      It has no accounts, no ads, no analytics and no tracking, and it does not send any data to us or to anyone else.
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="doc">
+
+    <h2>Who we are</h2>
+    <p>Cliptyd is an iPhone app and keyboard made by Chinazom Emeregbam (&ldquo;we&rdquo;, &ldquo;us&rdquo;). If you have any questions about this policy, contact us at <a href="mailto:cliptyd@gmail.com">cliptyd@gmail.com</a>.</p>
+
+    <h2>What Cliptyd stores</h2>
+    <p>Cliptyd saves the text you copy, so you can paste earlier copies and not only the latest one. It keeps up to 20 recent items. This history is stored only on your device, in storage shared between the Cliptyd app and the Cliptyd keyboard.</p>
+    <p>Cliptyd also stores a few simple settings on your device, such as whether to save automatically when the app opens.</p>
+
+    <h2>What Cliptyd does not do</h2>
+    <ul class="tick">
+      <li>It does not send your clipboard history, or anything else, off your device.</li>
+      <li>It does not record, store or send what you type on the keyboard. The only text it saves is text you copy.</li>
+      <li>It does not use analytics, advertising, tracking or third-party services.</li>
+      <li>It does not require an account.</li>
+    </ul>
+
+    <h2>Why the keyboard asks for Full Access</h2>
+    <p>iOS requires &ldquo;Allow Full Access&rdquo; for a keyboard to read what you copy and to share its saved history with its app. We use it only for those two things. Cliptyd does not use Full Access to connect to the internet or to transmit any data.</p>
+    <p>The keyboard works for typing without Full Access, but it cannot save or show your clipboard history without it.</p>
+
+    <h2>Clipboard access in the app</h2>
+    <p>When you open Cliptyd, it can save what you most recently copied. iOS may ask whether Cliptyd may paste from other apps, and you can choose Allow or Don&rsquo;t Allow at any time in Settings &gt; Cliptyd &gt; Paste from Other Apps. You can also turn this automatic saving off inside the app.</p>
+
+    <h2>Sensitive information</h2>
+    <p>Cliptyd saves text you copy, which could include sensitive text such as a password if you copy one. Anything saved stays on your device. You can delete any item by swiping on it in the app or pressing and holding it in the keyboard, or delete everything with &ldquo;Clear all&rdquo;. Uninstalling Cliptyd deletes its saved history from your device.</p>
+
+    <h2>Backups</h2>
+    <p>Your device or iCloud backups, which you control through your Apple settings, may include Cliptyd&rsquo;s stored data. We do not have access to those backups.</p>
+
+    <h2>Shortcuts</h2>
+    <p>If you use the &ldquo;Save to Clipboard History&rdquo; action in the Shortcuts app, the text you pass to it is passed to Cliptyd on your device and saved in your history in the same way.</p>
+
+    <h2>Children</h2>
+    <p>Cliptyd is not directed at children and does not collect personal information from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, we will update the effective date above. If a change affects how your data is handled, we will tell you in the app.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or requests: <a href="mailto:cliptyd@gmail.com">cliptyd@gmail.com</a></p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Chinazom Emeregbam. All rights reserved.</span>
+    <span><a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="mailto:cliptyd@gmail.com">Contact</a></span>
+  </div>
+</footer>
+
 </body>
 </html>
