@@ -173,6 +173,17 @@
   footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
   footer a:hover { color: var(--text); }
 
+
+  .where { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  details {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 4px 20px; margin-bottom: 10px;
+  }
+  summary { cursor: pointer; font-weight: 600; padding: 14px 0; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--accent-1); font-size: 1.3rem; line-height: 1; }
+  details[open] summary::after { content: "\2212"; }
+  details p { margin: 0 0 16px; color: var(--muted); }
+  @media (max-width: 860px) { .where { grid-template-columns: 1fr; } }
   @media (max-width: 860px) {
     .hero .wrap { grid-template-columns: 1fr; padding-top: 44px; padding-bottom: 56px; }
     .phone { transform: none; }
@@ -196,6 +207,7 @@
     </a>
     <nav>
       <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
       <a href="/privacy/">Privacy</a>
       <a href="#support">Support</a>
     </nav>
@@ -291,6 +303,69 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Where to find it</div>
+    <h2>Your history lives in the Cliptyd keyboard.</h2>
+    <p class="sub">iPhone only remembers the last thing you copied. Cliptyd adds the memory, and you use it from the keyboard, in any app.</p>
+    <div class="where">
+      <div class="card">
+        <h3>1. Copy as usual</h3>
+        <p>Copy text in Safari, Messages, Notes or any other app.</p>
+      </div>
+      <div class="card">
+        <h3>2. Switch with the globe key</h3>
+        <p>Press and hold the globe key on your keyboard and choose Cliptyd. The space bar reads &ldquo;Cliptyd&rdquo; so you know you are in it.</p>
+      </div>
+      <div class="card">
+        <h3>3. Tap the clipboard button</h3>
+        <p>It&rsquo;s at the top left of the keyboard, and it opens your recent copies. Your latest copy is also one tap away in the strip beside it.</p>
+      </div>
+      <div class="card">
+        <h3>4. Tap what you want</h3>
+        <p>The text is typed straight into the app you are using. The Cliptyd app shows the same list and lets you manage it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2>Common questions.</h2>
+    <p class="sub">Short answers to what people ask most.</p>
+
+    <details>
+      <summary>Where is my clipboard history?</summary>
+      <p>In the Cliptyd keyboard. Press and hold the globe key, choose Cliptyd, then tap the clipboard button at the top left. The Cliptyd app shows the same list.</p>
+    </details>
+    <details>
+      <summary>Why isn&rsquo;t my latest copy showing?</summary>
+      <p>The keyboard saves what you have copied when it appears on screen. iPhone only holds one copy at a time, so if you copy several things before opening the keyboard, only the last one is saved. Open Cliptyd after copying to catch it.</p>
+    </details>
+    <details>
+      <summary>Why does Cliptyd need Full Access?</summary>
+      <p>iOS requires it for a keyboard to read what you copy and to share its history with the app. Nothing leaves your iPhone.</p>
+    </details>
+    <details>
+      <summary>Does Cliptyd see what I type?</summary>
+      <p>No. It only saves text that you copy, and it never sends anything off your iPhone.</p>
+    </details>
+    <details>
+      <summary>Why does my iPhone ask me to Allow Paste?</summary>
+      <p>iOS asks whenever an app reads your clipboard. To stop the pop-up, open Settings &gt; Apps &gt; Cliptyd &gt; Paste from Other Apps and choose Allow.</p>
+    </details>
+    <details>
+      <summary>Are passwords saved?</summary>
+      <p>Cliptyd skips copies that the source app marks as sensitive, such as many password managers, but it cannot catch everything. You can pause saving or delete any item at any time.</p>
+    </details>
+    <details>
+      <summary>How many copies are kept?</summary>
+      <p>The last 20. To delete one, swipe left in the app, or press and hold it in the keyboard.</p>
+    </details>
   </div>
 </section>
 
