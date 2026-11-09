@@ -191,6 +191,11 @@
     .nav nav { gap: 16px; font-size: 0.9rem; }
     section { padding: 52px 0; }
   }
+  .nav nav a { white-space: nowrap; }
+  @media (max-width: 560px) {
+    .nav nav { gap: 14px; font-size: 0.85rem; }
+    .hide-sm { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -209,7 +214,7 @@
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
       <a href="/privacy/">Privacy</a>
-      <a href="#support">Support</a>
+      <a href="#support" class="hide-sm">Support</a>
     </nav>
   </div>
 </header>
