@@ -192,9 +192,12 @@
     section { padding: 52px 0; }
   }
   .nav nav a { white-space: nowrap; }
+  .nav nav a.nav-cta { color: #fff; padding: 7px 14px; border-radius: 12px; font-weight: 600; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); }
+  .nav nav a.nav-cta:hover { color: #fff; text-decoration: none; opacity: .92; }
   @media (max-width: 560px) {
     .nav nav { gap: 14px; font-size: 0.85rem; }
     .hide-sm { display: none; }
+    .nav nav a:not(.nav-cta) { display: none; }
   }
 </style>
 </head>
@@ -215,6 +218,7 @@
       <a href="#faq">FAQ</a>
       <a href="/privacy/">Privacy</a>
       <a href="#support" class="hide-sm">Support</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/id6830334466" target="_blank" rel="noopener">Get the app</a>
     </nav>
   </div>
 </header>
@@ -224,12 +228,12 @@
 <section class="hero" style="padding:0">
   <div class="wrap">
     <div>
-      <span class="pill">Coming soon to the App Store</span>
+      <span class="pill">Now on the App Store</span>
       <h1>Paste what you copied <span class="grad">earlier</span>.</h1>
       <p class="lead">Cliptyd is a keyboard for iPhone that remembers your last 20 copies, so you can paste any of them, not just the latest.</p>
       <div class="cta">
-        <a class="btn primary" href="#how">See how it works</a>
-        <a class="btn" href="/privacy/">Privacy policy</a>
+        <a class="btn primary" href="https://apps.apple.com/app/id6830334466" target="_blank" rel="noopener">Get Cliptyd on the App Store</a>
+        <a class="btn" href="#how">See how it works</a>
       </div>
       <p class="fine">Private by design. Everything stays on your iPhone.</p>
     </div>
@@ -380,6 +384,7 @@
       <h2>Your clipboard stays yours.</h2>
       <p>Cliptyd works entirely on your iPhone. We never see what you copy, and we have no way to.</p>
       <a class="btn" href="/privacy/">Read the privacy policy</a>
+      <a class="btn" href="https://apps.apple.com/app/id6830334466" target="_blank" rel="noopener">Get Cliptyd on the App Store</a>
     </div>
   </div>
 </section>
